@@ -1,11 +1,13 @@
 import React from 'react';
 import OBForm from './Form';
 import './App.css';
+import smaller from './smaller.jpg';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <img src = './smaller.jpg'></img>
        <OBForm /> 
       </header>
     </div>
