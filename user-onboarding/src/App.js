@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src = './smaller.jpg' alt = 'myCorp Logo'></img>
+        <img src = {smaller} alt = 'myCorp Logo'></img>
        <OBForm /> 
       </header>
     </div>
