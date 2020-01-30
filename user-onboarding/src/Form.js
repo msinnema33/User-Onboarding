@@ -1,12 +1,14 @@
 import React from 'react';
-import { withFormik, Field } from 'formik';
+import { withFormik, Form, Field } from 'formik';
+import './OBForm.css';
 
-const Form = ({values, handleChange}) => {
+const OBForm = ({values, handleChange}) => {
     return(
         <div>
-            This is my initial Form
-            <Form>
-                <label htmlFor='name'>Name</label>
+            Welcome to MyCorp!<br></br>
+            Please fill out the form
+            <Form className = 'mainForm'>
+                <label htmlFor = 'name'>Name</label>
                     <Field
                     id = 'name'
                     type = 'text'
@@ -43,10 +45,10 @@ const FormikForm = withFormik({mapPropsToValues(name, email, password, tos ){
     return {
         name: name || '',
         email: email || '',
-        password: password || '',
+        password: '',
         tos: tos || ''    
 
     };
 }
-})(Form);
+})(OBForm);
 export default FormikForm;
