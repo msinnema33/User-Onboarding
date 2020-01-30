@@ -1,0 +1,9 @@
+.mainForm {
+    background-color: #33B679;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding: 1%;
+    color: white;
+  }
